@@ -1,0 +1,38 @@
+--mode train
+--model_name bts_resnext101_argo_rgb
+--bts_size 1024
+--encoder resnext101_bts
+--dataset argo
+--data_path ./train_val_split/train/rgb/
+--gt_path ./train_val_split/train/depth/
+--filenames_file ./train_val_split/argo_train_files_with_gt.txt
+
+--save_freq 5500
+--batch_size 8
+--num_epochs 50
+
+--learning_rate 1e-4
+--weight_decay 1e-2
+--adam_eps 1e-3
+
+--num_threads 1
+--input_height 1184
+--input_width 1920
+--max_depth 200
+
+--do_random_rotate
+--degree 1.0
+
+--log_directory ./models/
+
+--multiprocessing_distributed
+
+--log_freq 50
+--eval_freq 500
+--data_path_eval ./train_val_split/val/depth/
+--gt_path_eval ./train_val_split/val/rgb/
+--filenames_file_eval ./train_val_split/argo_val_files_with_gt.txt
+--min_depth_eval 1e-3
+--max_depth_eval 200
+--eval_summary_directory ./models/eval/
+--garg_crop
