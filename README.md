@@ -11,6 +11,9 @@ Below are few sample depth estimation from the Argoverse trained Resnext101 BTS 
 ## Depth estimation on Other Ring Cameras
 [![Screenshot](images/vlcsnap-2020-07-21-14h43m47s958.png)](https://youtu.be/mjnpUREeBcM)
 
+## Depth estimation on Ford AV dataset (Click to watch the whole video)
+[![Sample run on ford av dataset!](images/depth_av.gif)](https://youtu.be/vGBkDh8BCQY)
+
 
 To know more on Argoverse depth dataset creation, check out [this](https://github.com/TilakD/argoverse-api/blob/master/demo_usage/argoverse_monocular_depth_map_tutorial.ipynb) tutorial notebook.
 
