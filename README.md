@@ -15,6 +15,12 @@ Below are few sample depth estimation from the Argoverse trained Resnext101 BTS 
 [![Sample run on ford av dataset!](images/depth_av.gif)](https://youtu.be/vGBkDh8BCQY)
 
 
-To know more on Argoverse depth dataset creation, check out [this](https://github.com/TilakD/argoverse-api/blob/master/demo_usage/argoverse_monocular_depth_map_tutorial.ipynb) tutorial notebook.
+# Argoverse-Monocular_depth-dataset-creation
+Follow the instructions in [this](https://github.com/TilakD/Argoverse-Monocular_depth-dataset-creation/blob/main/argoverse_monocular_depth_map_tutorial.ipynb) notebook to generate depth maps from lidar ground truth points corresponding to the ring camera frames and use it for monocular depth estimation model training. 
+
+NOTE: This notebook will be merged with Argoverse through [this](https://github.com/argoai/argoverse-api/pull/146) PR.
+
+![Alt text](https://github.com/TilakD/Argoverse-Monocular_depth-dataset-creation/blob/main/depth_map.png "Sample")
+*Depth map dilated for better visualization
 
 Model trained on BTS arch - Check them out [here.](https://github.com/cogaplex-bts/bts)
